@@ -1,0 +1,18 @@
+{
+  "name": "simpleone-institucional",
+  "packageManager": "yarn@4.3.1",
+  "scripts": {
+    "dev": "concurrently -n vite,tailwind -c green,blue \"vite build --watch\" \"tailwindcss -i ./src/assets/style.css -o ./dist/assets/style.css --watch\"",
+    "build": "vite build && tailwindcss -i ./src/assets/style.css -o ./dist/assets/style.css",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.10",
+    "@types/node": "^20.0.0",
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.1.2",
+    "tailwindcss": "^4.1.10",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  }
+}

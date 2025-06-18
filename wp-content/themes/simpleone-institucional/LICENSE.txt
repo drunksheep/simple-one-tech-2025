@@ -1,0 +1,9 @@
+PROPRIETARY LICENSE
+
+Copyright © 2025 Simple One.
+
+This theme ("Theme") is proprietary software developed by Simple One for use by the designated client. Redistribution, resale, sublicensing, or modification of this Theme, in whole or in part, is strictly prohibited without explicit written permission from Simple One.
+
+The Theme is provided "as is" without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement.
+
+For licensing inquiries, contact: contato@simpleonetech.com.br
