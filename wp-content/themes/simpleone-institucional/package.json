@@ -6,6 +6,15 @@
     "build": "vite build && tailwindcss -i ./src/assets/style.css -o ./dist/assets/style.css",
     "clean": "rm -rf dist"
   },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-regular-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "sweetalert2": "^11.22.2",
+    "swiper": "^11.2.8"
+  },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.10",
     "@types/node": "^20.0.0",

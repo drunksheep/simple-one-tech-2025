@@ -11,6 +11,7 @@ class Theme
         add_filter('show_admin_bar', '__return_false');
         add_action('init', [$this, 'disable_emojis']);
         add_action('init', [$this, 'disable_xmlrpc']);
+        add_action('init', [$this, 'theme_supports']);
     }
 
     public function theme_enqueues(): void
@@ -65,6 +66,16 @@ class Theme
     public function remove_admin_bar_bump(): void
     {
         echo '<style>html { margin-top: 0 !important; }</style>';
+    }
+
+    public function  theme_supports(): void {
+        add_theme_support('post-thumbnails');
+    }
+
+    public function hoist_vars_to_ts() : void {
+        wp_localize_script('theme', 'helpers', [
+            'ajax_url' => ''
+        ]);
     }
 }
 
