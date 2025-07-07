@@ -5,13 +5,13 @@ get_template_part('includes/components/header', 'header');
 <main class="min-h-screen bg-gray-500 pt-40 relative">
 
     <div class="w-200 h-200 blur-[100px] opacity-50 rounded-full bg-purple-400 absolute -right-160 -top-80"></div>
-    <div class="pt-20"></div>
+    <div class="lg:pt-20"></div>
 
     <section>
         <div class="container mx-auto py-48 relative rounded-xl overflow-hidden">
-            <div class="bg-gradient-to-t from-black/80 to-transparent z-[3] top-0 left-0 w-full"></div>
-            <img class="absolute top-0 left-0 w-full h-full object-cover z-[2]"
-                src="<?php echo image_dir('consultoria-1.png'); ?>" alt="">
+            <div class="bg-gradient-to-t from-black/80 to-transparent z-[3] top-0 left-0 w-full max-w-[95%] lg:max-w-none mx-auto"></div>
+            <img class="absolute top-0 left-0 right-0 w-full h-full object-cover z-[2] rounded-3xl max-w-[95%] lg:max-w-none mx-auto"
+                src="<?php echo image_dir('bg-onvio.jpg'); ?>" alt="">
             <div class="absolute top-[50%] translate-y-[-50%] left-0 right-0 mx-auto text-center z-[4]">
                 <h1 class="title mb-2">
                     Módulos Onvio e Consultoria:
@@ -261,9 +261,9 @@ get_template_part('includes/components/header', 'header');
                 foreach ($tools as $index => [$title, $desc]):
                     ?>
 
-                    <div class="bg-black/20 py-10 px-6">
+                    <div class="bg-black/20 py-10 px-6 group hover:rounded-2xl transition duration-300 hover:bg-purple-400">
                         <div class="flex flex-row flex-nowrap gap-x-4 items-center justify-start mb-4">
-                            <img src="<?php echo image_dir('/simple-docs/icon-' . $index . '.svg') ?>" alt="">
+                            <img class="group-hover:invert group-hover:brightness-0 group-hover:contrast-200" src="<?php echo image_dir('/simple-docs/icon-' . $index . '.svg') ?>" alt="">
                             <h3 class="font-bold text-2xl text-white">
                                 <?php echo $title ?>
                             </h3>

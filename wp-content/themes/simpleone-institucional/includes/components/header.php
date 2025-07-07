@@ -51,20 +51,11 @@
                     </span>
                 </button>
 
-                <?php $logo = !wp_is_mobile() ? get_field('logo', 'option') : image_dir('logo-mobile.svg'); ?>
+                <?php $logo = wp_is_mobile() ? image_dir('logo-mobile.svg') : image_dir('logo.svg'); ?>
 
                 <?php if ($logo): ?>
                     <a href="<?php echo site_url('/'); ?>" id="header-logo">
-                        <?php if (wp_is_mobile()): ?>
-
-                            <img src="<?php echo $logo; ?>" alt="">
-
-                        <?php else: ?>
-
-                            <img width="<?php echo $logo['width']; ?>" height="<?php echo $logo['height'] ?>"
-                                src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>">
-
-                        <?php endif; ?>
+                        <img src="<?php echo $logo; ?>" alt="">
                     </a>
                 <?php endif; ?>
 
@@ -81,10 +72,13 @@
 
                                 <?php if (!empty($menu_item->children)): ?>
 
-                                    <i class="fa fa-chevron-down text-white text-sm"></i>
+
+                                    <?php if (!wp_is_mobile()): ?>
+                                        <i class="fa fa-chevron-down text-white text-sm"></i>
+                                    <?php endif; ?>
 
                                     <ul
-                                        class="static lg:absolute top-8 left-0 lg:invisible lg:opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-300">
+                                        class="static rounded-xl mt-3 lg:mt-0 lg:rounded-none bg-gray-500 p-3 lg:p-0 lg:bg-transparent lg:absolute top-8 left-0 lg:invisible lg:opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-300">
                                         <?php foreach ($menu_item->children as $child_item): ?>
                                             <li>
                                                 <a class="block py-2 lg:py-4 lg:px-6 lg:bg-gray-500 lg:min-w-[300px] hover:bg-gray-600 transition duration-300"

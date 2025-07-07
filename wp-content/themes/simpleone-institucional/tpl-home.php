@@ -29,35 +29,35 @@ get_template_part('includes/components/header', 'header');
             </div>
         </div>
 
-        <img class="absolute top-0 right-0 max-w-[220px] lg:max-w-[550px] 2xl:max-w-3xl"
+        <img class="absolute top-0 right-0 max-w-[220px] lg:max-w-[500px] 2xl:max-w-[670px]"
             src="<?php echo image_dir('shape.png'); ?>" alt="">
     </section>
 
-    <section class="bg-purple-400">
-        <div class="container mx-auto py-10 grid grid-cols-2 lg:grid-cols-4">
-            <p class="text-white">
+    <section class="bg-purple-400" id="numbers">
+        <div class="container mx-auto py-10 grid grid-cols-1 gap-y-8 lg:grid-cols-4">
+            <p class="text-white text-center">
                 <strong class="text-6xl block font-black">
                     +500
                 </strong>
                 <span class="text-white/75">CNPJs atendidos</span>
             </p>
-            <p class="text-white">
+            <p class="text-white text-center">
                 <strong class="text-6xl block font-black">
-                    +20
+                    +50 Mil
                 </strong>
-                <span class="text-white/75">Opção</span>
+                <span class="text-white/75">Consultas realizadas via API homologada Serpro</span>
             </p>
-            <p class="text-white">
+            <p class="text-white text-center">
                 <strong class="text-6xl block font-black">
-                    +20
+                    +100 Mil
                 </strong>
-                <span class="text-white/75">Opção</span>
+                <span class="text-white/75">XML do ESocial retificados</span>
             </p>
-            <p class="text-white">
+            <p class="text-white text-center">
                 <strong class="text-6xl block font-black">
-                    +20
+                    +40
                 </strong>
-                <span class="text-white/75">Opção</span>
+                <span class="text-white/75">Consultorias de automação e melhorias domínio contábil</span>
             </p>
         </div>
     </section>
@@ -78,15 +78,15 @@ get_template_part('includes/components/header', 'header');
             </h2>
 
             <div
-                class="hidden lg:block timeline-companion absolute left-0 h-[80%] top-[50%] translate-y-[-50%] flex flex-col items-center justify-center">
-                <img src="<?php echo image_dir('wheel-white.svg'); ?>" />
+                class="hidden timeline-companion absolute left-0 h-[80%] top-[50%] translate-y-[-50%] lg:flex flex-col items-center justify-center">
+                <img class="sticky top-[200px]" src="<?php echo image_dir('wheel-white.svg'); ?>" />
                 <img class="h-full" src="<?php echo image_dir('timeline.svg'); ?>" alt="">
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-8 lg:max-w-[85%] mx-auto">
 
                 <div class="card order-2 lg:order-none">
-                    <img class="h-full" src="<?php echo image_dir('simple-docs-tributario.svg'); ?>" alt="">
+                    <img width="40" height="40" src="<?php echo image_dir('simple-docs-tributario.svg'); ?>" alt="">
                     <h2 class="font-bold text-3xl">
                         Simple Docs Tributário
                     </h2>
@@ -101,18 +101,18 @@ get_template_part('includes/components/header', 'header');
                 </div>
 
                 <div class="card-image order-1 lg:order-none">
-                    <img class="w-full object-cover rounded-xl" src="<?php echo image_dir('sistema-1.jpg'); ?>" alt="">
+                    <img class="w-full object-cover rounded-xl" src="<?php echo image_dir('01.jpg'); ?>" alt="">
                 </div>
 
                 <!--  -->
 
                 <div class="card-image order-3 lg:order-none">
-                    <img class="w-full object-cover rounded-xl" src="<?php echo image_dir('simple-bot-2.jpg'); ?>"
+                    <img class="w-full object-cover rounded-xl" src="<?php echo image_dir('02.jpg'); ?>"
                         alt="">
                 </div>
 
                 <div class="card order-4 lg:order-none">
-                    <img class="h-full" src="<?php echo image_dir('simple-bot-ai.svg'); ?>" alt="">
+                    <img width="40" height="40" src="<?php echo image_dir('simple-bot-ai.svg'); ?>" alt="">
                     <h2 class="font-bold text-3xl">
                         Simple Bot AI
                     </h2>
@@ -130,7 +130,7 @@ get_template_part('includes/components/header', 'header');
                 <!--  -->
 
                 <div class="card order-6 lg:order-none">
-                    <img class="h-full" src="<?php echo image_dir('simple-tech-sign.svg'); ?>" alt="">
+                    <img width="40" height="40" src="<?php echo image_dir('simple-tech-sign.svg'); ?>" alt="">
                     <h2 class="font-bold text-3xl">
                         Simple Tech Sign
                     </h2>
@@ -145,7 +145,7 @@ get_template_part('includes/components/header', 'header');
                 </div>
 
                 <div class="card-image order-5 lg:order-none">
-                    <img class="w-full object-cover rounded-xl" src="<?php echo image_dir('simple-tech-sign.jpg'); ?>"
+                    <img class="w-full object-cover rounded-xl" src="<?php echo image_dir('03.jpg'); ?>"
                         alt="">
                 </div>
 
@@ -153,12 +153,12 @@ get_template_part('includes/components/header', 'header');
 
 
                 <div class="card-image order-7 lg:order-none">
-                    <img class="w-full object-cover rounded-xl" src="<?php echo image_dir('social-tech.jpg'); ?>"
+                    <img class="w-full object-cover rounded-xl" src="<?php echo image_dir('04.jpg'); ?>"
                         alt="">
                 </div>
 
                 <div class="card order-8 lg:order-none">
-                    <img class="h-full" src="<?php echo image_dir('social-tech.svg'); ?>" alt="">
+                    <img width="40" height="40" src="<?php echo image_dir('social-tech.svg'); ?>" alt="">
                     <h2 class="font-bold text-3xl">
                         Social Tech
                     </h2>
@@ -181,7 +181,7 @@ get_template_part('includes/components/header', 'header');
     <?php get_template_part('includes/sections/about', 'about'); ?>
 
 
-    <section class="relative">
+    <section class="relative" id="differentials">
 
         <div class="absolute left-0 bottom-0 bg-gradient-to-t from-purple-400 to-transparent h-[90%] lg:h-[70%] w-full">
         </div>
@@ -272,12 +272,6 @@ get_template_part('includes/components/header', 'header');
                         'plaemac.png'
                     ],
                     [
-                        'O Simple Docs Tributário trouxe mais precisão e segurança ao nosso escritório, reduzindo falhas humanas com automação e validação em tempo real. A agilidade nas entregas também aumentou a satisfação dos clientes.',
-                        'Eduardo Musykant',
-                        'contabilidade musyconta',
-                        'musyconta.png'
-                    ],
-                    [
                         'O Simple Docs Tributário otimizou minha rotina. Agora acesso dados e documentos de forma rápida e segura, sem perder tempo em portais. Ganhei produtividade e foco estratégico. Ferramenta essencial para o contador moderno.',
                         'Emanuel',
                         'eva gestão e negócios',
@@ -294,12 +288,6 @@ get_template_part('includes/components/header', 'header');
                         'Daniel',
                         'contador plaemac',
                         'plaemac.png'
-                    ],
-                    [
-                        'O Simple Docs Tributário trouxe mais precisão e segurança ao nosso escritório, reduzindo falhas humanas com automação e validação em tempo real. A agilidade nas entregas também aumentou a satisfação dos clientes.',
-                        'Eduardo Musykant',
-                        'contabilidade musyconta',
-                        'musyconta.png'
                     ],
                     [
                         'O Simple Docs Tributário otimizou minha rotina. Agora acesso dados e documentos de forma rápida e segura, sem perder tempo em portais. Ganhei produtividade e foco estratégico. Ferramenta essencial para o contador moderno.',
@@ -382,7 +370,7 @@ get_template_part('includes/components/header', 'header');
                     </h2>
                 </div>
                 <p class="text-white text-xs lg:text-lg font-bold">
-                    <a href="#">
+                    <a class="hover:underline hover:text-purple-400 transiton-all duraiton-300" href="#">
                         VER TUDO &nbsp;
                         <i class="fa fa-chevron-right"></i>
                     </a>

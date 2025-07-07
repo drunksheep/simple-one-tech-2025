@@ -59,8 +59,8 @@ get_template_part('includes/components/header', 'header');
 
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-10">
                     <?php while ($other_posts->have_posts()): $other_posts->the_post(); ?>
-                       <article class="bg-white/5" id="<?php echo $i; ?>">
-                            <div class="min-h-[280px] lg:min-h-[300px] bg-black w-full relative">
+                         <article class="relative bg-white/5 hover:rounded-2xl transition duration-300 overflow-hidden group" id="<?php echo $i; ?>">
+                            <div class="min-h-[280px] lg:min-h-[360px] bg-black w-full relative">
                                 <?php if (has_post_thumbnail()):
                                     the_post_thumbnail('full', ['class' => 'absolute w-full h-full object-cover']);
                                 endif; ?>
@@ -69,12 +69,17 @@ get_template_part('includes/components/header', 'header');
                                 <p class="text-sm lg:text-lg text-white/75 w-full">
                                     <?php echo get_the_time('M d, Y'); ?>
                                 </p>
-                                <h3 class="font-bold text-white text-lg lg:text-2xl w-full hover:underline">
-                                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                                <h3 class="font-bold text-white text-lg lg:text-2xl w-full">
+                                    <a class="hover:underline" href="<?php the_permalink(); ?>">
                                         <?php the_title(); ?>
                                     </a>
                                 </h3>
                             </div>
+                            <a href="<?php the_permalink(); ?>" class="hidden lg:flex top-0 left-0 absolute w-full h-full bg-gradient-to-b from-purple-400/20 via-purple-400/40 to-purple-400/90 flex-col items-center justify-end pb-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ">
+                                <p class="text-white text-center text-lg font-bold">
+                                    LER ARTIGO
+                                </p>
+                            </a>
                         </article>
                     <?php endwhile; ?>
                 </div>

@@ -15,22 +15,22 @@ get_template_part('includes/components/header', 'header');
                 <h2 class="title">
                     Fale com a gente
                 </h2>
-                <div class="grid lg:grid-cols-3 w-full gap-x-8">
-                    <div class="aspect-video bg-purple-400 flex flex-col items-start p-10 justify-center text-white gap-y-6 transition duration-300 hover:rounded-2xl group hover:bg-white">
+                <div class="grid lg:grid-cols-3 w-full gap-8">
+                    <div class="lg:aspect-video bg-purple-400 flex flex-col items-start p-10 justify-center text-white gap-y-6 transition duration-300 hover:rounded-2xl group hover:bg-white">
                         <i class="fab fa-whatsapp text-5xl group-hover:text-purple-400 transition duration-300"></i>
                         <p class="text-2xl font-bold group-hover:text-purple-400 transition duration-300">WhatsApp</p>
-                        <a class="text-base group-hover:text-purple-400 transition duration-300" href="">
+                        <a href="https://wa.me/5511918448464" class="text-base group-hover:text-purple-400 transition duration-300" target="_BLANK">
                             ENVIAR MENSAGEM <i class="fa fa-chevron-right"></i>
                         </a>
                     </div>
-                    <div class="aspect-video bg-purple-400 flex flex-col items-start p-10 justify-center text-white gap-y-6 transition duration-300 hover:rounded-2xl group hover:bg-white">
+                    <div class="lg:aspect-video bg-purple-400 flex flex-col items-start p-10 justify-center text-white gap-y-6 transition duration-300 hover:rounded-2xl group hover:bg-white">
                         <i class="fa-regular fa-envelope text-5xl group-hover:text-purple-400 transition duration-300"></i>
                         <p class="text-2xl font-bold group-hover:text-purple-400 transition duration-300">E-mail</p>
-                        <a class="text-base group-hover:text-purple-400 transition duration-300" href="">
+                        <a class="text-base group-hover:text-purple-400 transition duration-300" href="mailto:contato@simpleonetech.com.br">
                             ENVIAR E-MAIL <i class="fa fa-chevron-right"></i>
                         </a>
                     </div>
-                    <div class="aspect-video bg-purple-400 flex flex-col items-start p-10 justify-center text-white gap-y-6 transition duration-300 hover:rounded-2xl group hover:bg-white">
+                    <div class="lg:aspect-video bg-purple-400 flex flex-col items-start p-10 justify-center text-white gap-y-6 transition duration-300 hover:rounded-2xl group hover:bg-white">
                         <i class="fa fa-phone text-5xl group-hover:text-purple-400 transition duration-300"></i>
                         <p class="text-2xl font-bold group-hover:text-purple-400 transition duration-300">Celular</p>
                         <a class="text-base group-hover:text-purple-400 transition duration-300" href="">

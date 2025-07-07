@@ -1,22 +1,20 @@
 <?php get_template_part('includes/components/header', 'header'); ?>
-<main class="bg-gray-500 relative">
+<main class="bg-gray-400 relative">
 
-    <div class="pt-40 relative">
-    </div>
-
-    <section>
-        <div class="container mx-auto grid lg:grid-cols-2 gap-x-10 py-16">
-
+    <section class="relative pt-20 lg:pt-30">
+        <img class="absolute bottom-0 left-0 w-full h-full object-cover"
+            src="<?php echo image_dir('bg-social-tech.jpg'); ?>" alt="">
+        <div class="absolute -bottom-1 h-full w-full left-0 bg-gradient-to-b from-transparent to-gray-400 blur-2xl">
+        </div>
+        <div class="container mx-auto grid lg:grid-cols-2 gap-x-10 py-16 relative z-10">
             <h1 class="title flex flex-row items-center justify-start gap-x-8">
                 <i class="fa fa-shield text-white text-2xl lg:text-6xl"></i>
                 Social Tech
             </h1>
-
             <p class="text-white text-xl">
                 Solução que garante a conformidade trabalhista ao auditar, analisar e monitorar os dados enviados ao
                 eSocial.
             </p>
-
         </div>
     </section>
 
@@ -54,7 +52,6 @@
                         </linearGradient>
                     </defs>
                 </svg>
-
             </div>
             <div>
                 <p class="subtitle">
@@ -81,13 +78,13 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-8 lg:gap-y-20">
 
                 <div class="card order-2 lg:order-none">
-                    <p class="subtitle mb-2">
+                    <p class="subtitle mb-0">
                         Sistema completo
                     </p>
-                    <h2 class="title mb-4">
+                    <h2 class="title mb-0">
                         Auditoria Digital 360°
                     </h2>
-                    <p class="text-sm lg:text-xl text-white/75 list-disc">
+                    <p class="text-sm lg:text-lg text-white/75 list-disc">
                         Acompanhamento de todos os eventos enviados ao eSocial, com geração de relatórios, fichas e
                         dashboards. Permite análise consultiva e rastreio completo de informações.
                     </p>
@@ -96,7 +93,7 @@
 
                 <div class="card-image relative order-1 lg:order-none">
                     <img class="w-full object-cover rounded-xl h-full"
-                        src="<?php echo image_dir('social-tech-1.jpg'); ?>" alt="">
+                        src="<?php echo image_dir('/social-tech/01.jpg'); ?>" alt="">
                 </div>
 
 
@@ -104,22 +101,22 @@
 
 
                 <div class="card-image relative order-3 lg:order-none">
-                    <img class="w-full object-cover rounded-xl h-full" src="<?php echo image_dir('sistema-1.jpg'); ?>"
+                    <img class="w-full object-cover rounded-xl h-full" src="<?php echo image_dir('/social-tech/02.jpg'); ?>"
                         alt="">
                 </div>
 
                 <div class="card order-4 lg:order-none">
-                    <p class="subtitle mb-2">
+                    <p class="subtitle mb-0">
                         Auditorias
                     </p>
-                    <h2 class="title mb-4">
+                    <h2 class="title mb-0">
                         Auditorias Mensais e Retroativas
                     </h2>
-                    <p class="text-sm lg:text-xl text-white/75 list-disc">
+                    <p class="text-sm lg:text-lg text-white/75 list-disc">
                         Revisão periódica dos envios para identificar erros, omissões e possibilitar recuperação
                         tributária.
                     </p>
-                    <ul class="text-sm lg:text-xl text-white/75 list-disc">
+                    <ul class="text-sm pl-4 lg:text-base text-white/75 list-disc">
                         <li>
                             Website ou portal de clientes
                         </li>
@@ -137,38 +134,38 @@
 
 
                 <div class="card order-6 lg:order-none">
-                    <p class="subtitle mb-2">
+                    <p class="subtitle mb-0">
                         Fácil e ágil
                     </p>
-                    <h2 class="title mb-4">
+                    <h2 class="title mb-0">
                         Retificação Inteligente
                     </h2>
-                    <p class="text-sm lg:text-xl text-white/75 list-disc">
+                    <p class="text-sm lg:text-lg text-white/75">
                         Importe ou extraia arquivos XML e realize retificações em lote diretamente no eSocial com
                         segurança e agilidade.
                     </p>
                 </div>
 
                 <div class="card-image relative order-5 lg:order-none">
-                    <img class="w-full object-cover rounded-xl h-full" src="<?php echo image_dir('sistema-1.jpg'); ?>"
+                    <img class="w-full object-cover rounded-xl h-full" src="<?php echo image_dir('/social-tech/03.jpg'); ?>"
                         alt="">
                 </div>
 
                 <!--  -->
 
                 <div class="card-image relative order-7 lg:order-none">
-                    <img class="w-full object-cover rounded-xl h-full" src="<?php echo image_dir('sistema-1.jpg'); ?>"
+                    <img class="w-full object-cover rounded-xl h-full" src="<?php echo image_dir('/social-tech/04.jpg'); ?>"
                         alt="">
                 </div>
 
                 <div class="card order-8 lg:order-none">
-                    <p class="subtitle mb-2">
+                    <p class="subtitle mb-0">
                         SST
                     </p>
-                    <h2 class="title mb-4">
+                    <h2 class="title mb-0">
                         Análise de Eventos SST e Reclamatórias Trabalhistas
                     </h2>
-                    <p class="text-sm lg:text-xl text-white/75 list-disc">
+                    <p class="text-sm lg:text-lg text-white/75 list-disc">
                         Audite o envio dos eventos de Saúde e Segurança do Trabalho (SST) e acompanhe processos de
                         reclamatórias com controle total dos prazos e envios.
                     </p>
@@ -177,13 +174,13 @@
                 <!--  -->
 
                 <div class="card order-10 lg:order-none">
-                    <p class="subtitle mb-2">
+                    <p class="subtitle mb-0">
                         Integrações
                     </p>
-                    <h2 class="title mb-4">
+                    <h2 class="title mb-0">
                         Conectividade com Caixas Postais e Órgãos Oficiais
                     </h2>
-                    <p class="text-sm lg:text-xl text-white/75 list-disc">
+                    <p class="text-sm lg:text-xl text-white/75">
                         Acesso direto às caixas postais da Receita Federal, DTE e DJE, além de relatórios do FGTS
                         Digital, DCTFWeb e certidões trabalhistas e previdenciárias.
                     </p>
@@ -191,25 +188,25 @@
 
                 <div class="card-image relative order-9 lg:order-none">
                     <img class="w-full object-cover rounded-xl h-full"
-                        src="<?php echo image_dir('social-tech-2.jpg'); ?>" alt="">
+                        src="<?php echo image_dir('/social-tech/05.jpg'); ?>" alt="">
                 </div>
 
                 <!--  -->
 
 
                 <div class="card-image relative order-11 lg:order-none">
-                    <img class="w-full object-cover rounded-xl h-full" src="<?php echo image_dir('sistema-4.jpg'); ?>"
+                    <img class="w-full object-cover rounded-xl h-full" src="<?php echo image_dir('/social-tech/06.jpg'); ?>"
                         alt="">
                 </div>
 
                 <div class="card order-12 lg:order-none">
-                    <p class="subtitle mb-2">
+                    <p class="subtitle mb-0">
                         PerdComp Web
                     </p>
-                    <h2 class="title mb-4">
+                    <h2 class="title mb-0">
                         Gestão de Compensações com PerdComp Web
                     </h2>
-                    <p class="text-sm lg:text-xl text-white/75 list-disc">
+                    <p class="text-sm lg:text-lg text-white/75 list-disc">
                         Acompanhe seus pedidos de restituição ou compensação com total visibilidade e controle.
                     </p>
                 </div>
@@ -236,9 +233,9 @@
                 foreach ($tools as $index => [$title, $desc]):
                     ?>
 
-                    <div class="bg-black/20 py-10 px-6">
-                        <div class="flex flex-row flex-wrap gap-x-4 items-center justify-start mb-4">
-                            <img src="<?php echo image_dir('/social-tech/icon-' . $index . '.svg') ?>" alt="">
+                    <div class="bg-black/20 py-10 px-6 group hover:rounded-2xl transition duration-300 hover:bg-purple-400">
+                        <div class="flex flex-row flex-nowrap gap-x-4 items-center justify-start mb-4">
+                            <img class="group-hover:invert group-hover:brightness-0 group-hover:contrast-200" src="<?php echo image_dir('/social-tech/icon-' . $index . '.svg') ?>" alt="">
                             <h3 class="font-bold text-2xl text-white">
                                 <?php echo $title ?>
                             </h3>
@@ -269,9 +266,9 @@
                 foreach ($tools as $index => [$title, $desc]):
                     ?>
 
-                    <div class="bg-black/20 py-10 px-6">
+                    <div class="bg-black/20 py-10 px-6 group hover:rounded-2xl transition duration-300 hover:bg-purple-400">
                         <div class="flex flex-row flex-nowrap gap-x-4 items-center justify-start mb-4">
-                            <img src="<?php echo image_dir('/social-tech-2/icon-' . $index . '.svg') ?>" alt="">
+                            <img class="group-hover:invert group-hover:brightness-0 group-hover:contrast-200" src="<?php echo image_dir('/social-tech-2/icon-' . $index . '.svg') ?>" alt="">
                             <h3 class="font-bold text-2xl text-white">
                                 <?php echo $title ?>
                             </h3>
@@ -332,22 +329,23 @@
 
     <section>
         <div
-            class="container mx-auto py-16 pb-6 lg:pb-20 flex flex-col lg:flex-row items-center gap-x-20 justify-between">
+            class="container mx-auto py-16 pb-6 lg:pb-20 flex flex-col lg:flex-row lg:flex-nowrap items-center gap-x-20 justify-between">
 
             <div>
                 <p class="subtitle">
                     Revolucione seu compliance
                 </p>
                 <h2 class="title mb-8">
-                    Digitalize, Audite e Garanta seu<br/> Compliance com a Social Tech
+                    Digitalize, Audite e Garanta seu<br /> Compliance com a Social Tech
                 </h2>
                 <p class="text-white text-sm lg:text-xl">
-                    Simplifique o eSocial, reduza riscos e ganhe eficiência. Uma solução inteligente para quem quer ir além da obrigação legal e transformar dados em segurança e controle estratégico.
+                    Simplifique o eSocial, reduza riscos e ganhe eficiência. Uma solução inteligente para quem quer ir
+                    além da obrigação legal e transformar dados em segurança e controle estratégico.
                 </p>
             </div>
 
-            <div>
-                <i class="fa fa-shield text-purple-400 mb-10 lg:mb-0 text-[200px]"></i>
+            <div class="lg:min-w-[320px]">
+                <img width="320" height="320" src="<?php echo image_dir('shield-check-purple-glow.svg');  ?>" alt="">
             </div>
 
         </div>

@@ -6,7 +6,7 @@
                 <a href="">
                     <img src="<?php echo image_dir('logo-footer.svg') ?>" alt="<?php echo $logo['alt']; ?>">
                 </a>
-                <div class="flex flex-col lg:flex-row flex-wrap items-start gap-4 w-full lg:w-auto mt-4 lg:mt-0">
+                <div class="flex flex-row flex-nowrap items-start gap-4 w-full lg:w-auto mt-4 lg:mt-0">
                     <img width="44px" src="<?php echo image_dir('pin.svg'); ?>" alt="">
                     <p class="text-white/75">
                         <strong class="text-white">Rua Frei Caneca, 1246 – CJ 12</strong><br>
@@ -53,11 +53,11 @@
                 <div></div>
                 <div class="border border-purple-400 p-4 flex flex-col gap-3 items-start justify-start">
                     <p class="font-bold text-white text-lg uppercase">Meios de Contato</p>
-                    <a class="text-white/75 underline flex flex-row flex-wrap items-center justify-start gap-x-2" href="">
+                    <a class="text-white/75 underline flex flex-row flex-wrap items-center justify-start gap-x-2" href="https://wa.me/5511918448464" target="_BLANK">
                         <i class="fab fa-whatsapp text-xl"></i>
                         WhatsApp
                     </a>
-                    <a class="text-white/75 underline flex flex-row flex-wrap items-center justify-start gap-x-2" href="">
+                    <a class="text-white/75 underline flex flex-row flex-wrap items-center justify-start gap-x-2" href="mailto:contato@simpleonetech.com.br">
                         <i class="far fa-envelope text-xl"></i>
                         E-mail
                     </a>

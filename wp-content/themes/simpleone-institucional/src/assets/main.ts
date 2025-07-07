@@ -1,31 +1,36 @@
 import '@/assets/style.css';
-import Swal from 'sweetalert2';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { swiperFactory } from './carousel';
+import submitEmail from './contactform';
 import fontAwesomeWatch from './fontAwesome';
 import { mobileHeader } from './header';
 import setupModalHandler from './modalHandler';
 
+declare global {
+    interface Window {
+        helpers?: {
+            ajax_url?: string;
+            theme_url?: string;
+        };
+    }
+}
+
 
 window.onload = () => {
+
+
+
     fontAwesomeWatch();
 
     setupModalHandler();
 
     mobileHeader();
 
-    const forms = document.querySelectorAll('form');
+    const forms = document.querySelectorAll<HTMLFormElement>('form');
 
-    forms.length > 0 &&
+    forms &&
         forms.forEach((form) => {
-            form.addEventListener('submit', function (e: SubmitEvent) {
-                e.preventDefault();
-                Swal.fire({
-                    'icon': 'success',
-                    'title': 'Obrigado!',
-                    'text': 'Seu E-mail foi enviado com sucesso!'
-                })
-            })
+            form.addEventListener('submit', submitEmail)
         })
 
 

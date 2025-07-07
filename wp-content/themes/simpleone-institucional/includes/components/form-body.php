@@ -18,11 +18,14 @@
   <label class="field-wrapper col-span-2">
     <p class="text-white text-sm lg:text-lg font-bold mb-2">Setor/Área de atuação</p>
     <select class="basic-input" name="area" required>
-      <option disabled selected>Selecione</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
+      <option class="bg-gray-400" disabled selected>Selecione</option>
+      <option class="bg-gray-400" value="Serviços / Empresa">Serviços / Empresa</option>
+      <option class="bg-gray-400" value="Bares e Restaurantes">Bares e Restaurantes</option>
+      <option class="bg-gray-400" value="Linha de Produtos">Linha de Produtos</option>
+      <option class="bg-gray-400" value="Roupas e Acessórios">Roupas e Acessórios</option>
+      <option class="bg-gray-400" value="Eletro / Eletrônicos">Eletro / Eletrônicos</option>
+      <option class="bg-gray-400" value="Finanças">Finanças</option>
+      <option class="bg-gray-400" value="Jurídico">Jurídico</option>
     </select>
   </label>
 
@@ -47,7 +50,7 @@
     <textarea class="basic-input" name="message" placeholder="Do que você precisa?" required></textarea>
   </label>
 
-  <button type="submit" class="btn btn-purple taller w-full max-w-none block lg:col-span-2">
+  <button type="submit" class="btn btn-purple taller w-full max-w-none block lg:col-span-2 disabled:opacity-20 disabled:cursor-not-allowed">
     Enviar &nbsp; <i class="fa fa-arrow-right"></i>
   </button>
 </form>

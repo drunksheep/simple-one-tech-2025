@@ -1,3 +1,5 @@
+import Swal from "sweetalert2";
+
 type ContactFormFields = {
     name: string;
     email: string;
@@ -7,17 +9,15 @@ type ContactFormFields = {
     message: string;
 };
 
-const contactForm = document.querySelector<HTMLFormElement>('#contactForm');
+const submitURL = `${window.helpers?.ajax_url}?action=send_mail`;
 
-contactForm?.addEventListener('submit', async (e) => {
+export default async function submitEmail(e: SubmitEvent) {
     e.preventDefault();
 
-    const form = e.currentTarget;
-
-    if (!form) return
+    const form = e.currentTarget as HTMLFormElement;
+    if (!form || !submitURL) return;
 
     const formData = new FormData(form);
-
     const data: ContactFormFields = {
         name: formData.get('name') as string,
         email: formData.get('email') as string,
@@ -27,22 +27,57 @@ contactForm?.addEventListener('submit', async (e) => {
         message: formData.get('message') as string,
     };
 
+
+    const btn = form.querySelector('button');
+
+    if (btn) {
+        btn.disabled = true;
+        btn.textContent = 'Enviando...'
+    }
+
     try {
-        const response = await fetch('/wp-content/themes/your-theme/includes/ajax/send-contact.php', {
+
+        const response = await fetch(submitURL, {
             method: 'POST',
-            body: new URLSearchParams(data as Record<string, string>),
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
         });
 
-        const json: { success: boolean; error?: string } = await response.json();
+        const json = await response.json();
 
         if (json.success) {
-            alert('Mensagem enviada com sucesso!');
+            Swal.fire({
+                'icon': 'success',
+                'title': "Sucesso!",
+                'text': 'Sua mensagem foi enviada com sucesso.',
+                background: '#0F1216',
+                color: '#FFFFFF',
+            })
             form.reset();
         } else {
-            alert(`Erro: ${json.error || 'Falha ao enviar.'}`);
+            Swal.fire({
+                'icon': 'error',
+                'title': "Ops!",
+                'text': 'Erro no envio de sua mensagem, tente novamente mais tarde ou entre em contato através do e-mail contato@simpleonetech.com.br',
+                background: '#0F1216',
+                color: '#FFFFFF',
+            })
         }
     } catch (err) {
         console.error('Erro ao enviar o formulário:', err);
-        alert('Erro de rede ou servidor.');
+        Swal.fire({
+            'icon': 'error',
+            'title': "Ops!",
+            'text': 'Erro no envio de sua mensagem, tente novamente mais tarde ou entre em contato através do e-mail contato@simpleonetech.com.br',
+            background: '#0F1216',
+            color: '#FFFFFF',
+        })
+    } finally {
+        if (btn) {
+            btn.disabled = false;
+            btn.textContent = 'Enviar mensagem';
+        }
     }
-});
+}

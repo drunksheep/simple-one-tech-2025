@@ -22,6 +22,11 @@ class Theme
 
         wp_enqueue_style('theme', get_template_directory_uri() . '/dist/assets/main.css', [], null, 'all');
         wp_enqueue_script('theme', get_template_directory_uri() . '/dist/assets/main.js', [], null, true);
+
+        wp_localize_script('theme', 'helpers', [
+            'ajax_url' => admin_url('admin-ajax.php'),
+            'theme_url' => get_stylesheet_directory_uri(),
+        ]);
     }
 
     public function register_menus(): void
@@ -68,15 +73,11 @@ class Theme
         echo '<style>html { margin-top: 0 !important; }</style>';
     }
 
-    public function  theme_supports(): void {
+    public function theme_supports(): void
+    {
         add_theme_support('post-thumbnails');
     }
 
-    public function hoist_vars_to_ts() : void {
-        wp_localize_script('theme', 'helpers', [
-            'ajax_url' => ''
-        ]);
-    }
 }
 
 $theme = new Theme();

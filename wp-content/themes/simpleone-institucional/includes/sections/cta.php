@@ -1,8 +1,8 @@
-<section class="overflow-hidden relative">
+<section class="overflow-hidden relative group">
 
-    <div class="w-160 h-160 blur-[100px] opacity-25 rounded-full bg-purple-400 absolute left-20 -top-10"></div>
-    <div class="w-160 h-160 blur-[100px] opacity-25 rounded-full bg-purple-300 absolute right-20 -top-10"></div>
-    <div class="w-160 h-160 blur-[100px] opacity-25 rounded-full bg-purple-400 absolute left-0 right-0 mx-auto -top-10">
+    <div class="w-160 h-160 blur-[100px] opacity-25 rounded-full transition duration-300 group-hover:bg-purple-300 bg-purple-400 absolute left-20 -top-10"></div>
+    <div class="w-160 h-160 blur-[100px] opacity-25 rounded-full transition duration-300 group-hover:bg-purple-400 bg-purple-300 absolute right-20 -top-10"></div>
+    <div class="w-160 h-160 blur-[100px] opacity-25 rounded-full transition duration-300 bg-purple-400 absolute left-0 right-0 mx-auto -top-10">
     </div>
 
     <div

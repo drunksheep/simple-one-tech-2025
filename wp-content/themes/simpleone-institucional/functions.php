@@ -7,3 +7,5 @@ error_reporting(E_ALL);
 require 'includes/functions/Theme.php';
 
 require 'includes/functions/toolbox.php';
+
+require 'includes/functions/sendmail.php';
